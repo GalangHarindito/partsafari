@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component Card layout unchanged 1`] = `
+<div>
+  <div
+    class="bg-white grid grid-cols-[70px,1fr,2fr] p-2"
+  >
+    <div
+      class="justify-self-center self-center"
+    >
+      <label
+        class="flex items-center gap-2 cursor-pointer"
+      >
+        <div
+          class="flex items-center justify-center w-4 h-4 relative"
+        >
+          <input
+            checked=""
+            class=" peer appearance-none shrink-0 w-4 h-4 border border-checkbox-gray-border rounded bg-white checked:bg-checkbox-blue "
+            type="checkbox"
+          />
+          <svg
+            class="absolute w-3.5 h-3.5 pointer-events-none hidden peer-checked:block stroke-white"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.3"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="20 6 9 17 4 12"
+            />
+          </svg>
+        </div>
+        <span
+          class="text-sm hidden"
+        />
+      </label>
+    </div>
+    <div
+      class="justify-self-start"
+    >
+      <h4
+        class=" font-bold  xl:text-xl lg:text-lg"
+      >
+        Test Task
+      </h4>
+      <p
+        class="text-sm font-normal"
+      >
+        Test Category
+      </p>
+    </div>
+    <div
+      class="justify-self-center"
+    >
+      <p
+        class="text-sm font-normal"
+      >
+        2023/10/01 12:00
+      </p>
+    </div>
+  </div>
+</div>
+`;
