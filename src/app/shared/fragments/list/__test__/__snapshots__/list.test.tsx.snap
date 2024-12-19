@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fragment List Render Task,category,cratedAt 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Complete project
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Go grocery shopping
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Fragment List renders "Sorry, No Data Available" when datas is an empty array 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <h3
+      class=" font-bold  xl:text-2xl lg:text-xl md:text-lg"
+    >
+      Sorry, No Data Available
+    </h3>
+  </div>
+</div>
+`;
