@@ -3,7 +3,7 @@
 exports[`Checkbox Component Checkbox render with initial state true 1`] = `
 <input
   checked=""
-  class=""
+  class=" peer appearance-none shrink-0 w-4 h-4 border border-checkbox-gray-border rounded bg-white checked:bg-checkbox-blue "
   type="checkbox"
 />
 `;

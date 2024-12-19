@@ -9,9 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        "checkbox-blue": '#1755FF',
+        "checkbox-gray-border": '#949494',
         foreground: "var(--foreground)",
       },
+      borderWidth: {
+        DEFAULT: '1px',
+      }
     },
   },
   plugins: [],
