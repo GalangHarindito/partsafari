@@ -25,6 +25,11 @@ module.exports = {
  
     // Handle module aliases
     '^@/components/(.*)$': '<rootDir>/components/$1',
+    '^@/(.*)$': '<rootDir>/src/app/$1',
+    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
+  // If you are using TypeScript, you might want to add this:
+  preset: 'ts-jest',
+  testEnvironment: 'node', // or 'jsdom' if you are testing React components
  
     // Handle @next/font
     '@next/font/(.*)': `<rootDir>/__mocks__/nextFontMock.js`,
