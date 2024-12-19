@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography Component Component header h1 1`] = `
+<div>
+  <h1
+    class=" font-bold  xl:text-4xl lg:text-4xl md:text-2xl"
+  >
+    Heading 1
+  </h1>
+</div>
+`;
+
+exports[`Typography Component Component header h2 1`] = `
+<div>
+  <h2
+    class=" font-bold  xl:text-3xl lg:text-2xl md:text-xl"
+  >
+    Heading 2
+  </h2>
+</div>
+`;
+
+exports[`Typography Component Component header h3 1`] = `
+<div>
+  <h3
+    class=" font-bold  xl:text-2xl lg:text-xl md:text-lg"
+  >
+    Heading 3
+  </h3>
+</div>
+`;
+
+exports[`Typography Component Component header h4 1`] = `
+<div>
+  <h4
+    class=" font-bold  xl:text-xl lg:text-lg"
+  >
+    Heading 4
+  </h4>
+</div>
+`;
+
+exports[`Typography Component Component header h5 1`] = `
+<div>
+  <h5
+    class=" font-bold  xl:text-lg lg:text-base"
+  >
+    Heading 5
+  </h5>
+</div>
+`;
+
+exports[`Typography Component Component header h6 1`] = `
+<div>
+  <h6
+    class=" font-bold  xl:text-base"
+  >
+    Heading 6
+  </h6>
+</div>
+`;
+
+exports[`Typography Component Component header p 1`] = `
+<div>
+  <p
+    class=""
+  >
+    This is a paragraph
+  </p>
+</div>
+`;
