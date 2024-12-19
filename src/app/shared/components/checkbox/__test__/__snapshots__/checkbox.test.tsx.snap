@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Component Checkbox render with initial state true 1`] = `
+<input
+  checked=""
+  class=""
+  type="checkbox"
+/>
+`;
