@@ -5,10 +5,11 @@ import { useEffect, useState } from 'react';
 interface CheckboxProps {
   check: boolean;
   label?: string | null;
+  onChange: (isChecked: boolean) => void;
 }
 
 export default function Checkbox(props: CheckboxProps) {
-  const { check, label } = props;
+  const { check, label, onChange } = props;
   const [isChecked, setIsChecked] = useState<boolean>(check);
 
   useEffect(() => {
@@ -16,7 +17,9 @@ export default function Checkbox(props: CheckboxProps) {
   }, [check]);
 
   const checkHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newCheckedState = e.target.checked;
     setIsChecked(!isChecked);
+    onChange(newCheckedState)
   };
 
   return (

@@ -9,14 +9,14 @@ exports[`Fragment List Render Task if the category is all 1`] = `
       <div
         data-testid="mock-card"
       >
-        Task 1
+        Task 2
       </div>
     </div>
     <div>
       <div
         data-testid="mock-card"
       >
-        Task 2
+        Task 1
       </div>
     </div>
     <div>

@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import Card from '../card';
 import { formatDate } from '@/utils/helper';
 import '@testing-library/jest-dom';
@@ -13,12 +13,12 @@ describe('Card Component', () => {
   };
 
   test('Card layout unchanged', () => {
-    const { container } = render(<Card data={mockData} />);
+    const { container } = render(<Card data={mockData} onToggle={() => {}} />);
     expect(container).toMatchSnapshot();
   });
 
   test('render task and category', () => {
-    render(<Card data={mockData} />);
+    render(<Card data={mockData} onToggle={() => {}} />);
     const taskElement = screen.getByText(mockData.task);
     const categoryElement = screen.getByText(mockData.category);
     expect(taskElement).toBeInTheDocument();
@@ -26,25 +26,33 @@ describe('Card Component', () => {
   });
 
   test('renders checkbox with correct state', () => {
-    render(<Card data={mockData} />);
+    render(<Card data={mockData} onToggle={() => {}} />);
 
-    // Check if the checkbox is checked
     const checkbox = screen.getByRole('checkbox');
     expect(checkbox).toBeChecked();
   });
 
   test('render checkbox with false state', () => {
     const mockFalseCheck = { ...mockData, completed: false };
-    render(<Card data={mockFalseCheck} />);
+    render(<Card data={mockFalseCheck} onToggle={() => {}} />);
 
     const checkbox = screen.getByRole('checkbox');
     expect(checkbox).not.toBeChecked();
   });
 
   test('render date', () => {
-    render(<Card data={mockData} />);
+    render(<Card data={mockData} onToggle={() => {}} />);
 
     const date = screen.getByText(formatDate(mockData.createdAt));
     expect(date).toBeInTheDocument();
   });
+
+  test('User event when checkbox checked', () => {
+    const onToggle = jest.fn();
+    render(<Card data={mockData} onToggle={onToggle} />);
+    const checkbox = screen.getByRole('checkbox');
+
+    fireEvent.click(checkbox)
+    expect(onToggle).toHaveBeenCalled();
+  })
 });

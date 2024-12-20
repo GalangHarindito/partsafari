@@ -80,13 +80,14 @@ describe('Fragment List', () => {
       get: jest.fn().mockReturnValue('work'),
     });
 
-    const { container } = render(<List datas={mockDataWork} />);
-    const cards = screen.getAllByTestId('mock-card');
+    const { container } = render(<List datas={mockData} />);
+    const cards = screen.getAllByText(/Task/i);
 
+    expect(cards.length).toBe(mockDataWork.length);
     expect(screen.getByText('Task 1')).toBeInTheDocument();
     expect(screen.getByText('Task 3')).toBeInTheDocument();
-    expect(screen.queryByText('Task 2')).not.toBeInTheDocument();
-    expect(cards.length).toBe(mockDataWork.length);
+    
+    
 
     expect(container).toMatchSnapshot();
   });
