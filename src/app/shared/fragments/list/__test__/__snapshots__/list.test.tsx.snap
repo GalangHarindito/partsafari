@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fragment List Render Task,category,cratedAt 1`] = `
+exports[`Fragment List Render Task if the category is all 1`] = `
 <div>
   <div
     class="flex flex-col gap-y-4"
@@ -9,14 +9,44 @@ exports[`Fragment List Render Task,category,cratedAt 1`] = `
       <div
         data-testid="mock-card"
       >
-        Complete project
+        Task 1
       </div>
     </div>
     <div>
       <div
         data-testid="mock-card"
       >
-        Go grocery shopping
+        Task 2
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Fragment List Render Task if the category is work 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 1
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 3
       </div>
     </div>
   </div>
