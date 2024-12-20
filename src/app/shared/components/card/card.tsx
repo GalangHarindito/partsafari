@@ -10,15 +10,16 @@ interface CardPropertyProps {
     createdAt: string;
     completed: boolean;
   };
+  onToggle: (checked: boolean) => void;
 }
 
-export default function Card({ data }: CardPropertyProps) {
+export default function Card({ data, onToggle }: CardPropertyProps) {
   const { category, task, createdAt, completed } = data;
 
   return (
     <div className="bg-white grid grid-cols-[70px,1fr,2fr] p-2">
       <div className="justify-self-center self-center">
-        <Checkbox check={completed} />
+        <Checkbox check={completed} onChange = {onToggle} />
       </div>
       <div className="justify-self-start">
         <Typography type="H4" title={task} />
