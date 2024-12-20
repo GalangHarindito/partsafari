@@ -15,6 +15,9 @@ export default {
         background: "var(--background)",
         'background-main': '#F8F8F8',
         foreground: "var(--foreground)",
+        'tab-active': "#D2E3DF",
+        'tab-font-active': "#004736",
+        'tab-inactive': "#E8E2E2"
       },
       borderWidth: {
         DEFAULT: '1px',
