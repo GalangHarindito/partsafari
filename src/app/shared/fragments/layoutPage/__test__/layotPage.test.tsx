@@ -1,9 +1,9 @@
-import { render } from "@testing-library/react";
-import LayoutPage from "../layoutPage";
-import "@testing-library/jest-dom";
+import { render } from '@testing-library/react';
+import LayoutPage from '../layoutPage';
+import '@testing-library/jest-dom';
 
-describe("LayoutPage Component", () => {
-  test("Render the header with correct title", () => {
+describe('LayoutPage Component', () => {
+  test('Render the header with correct title', () => {
     const { container, getByText } = render(
       <LayoutPage>
         <div>Test Children</div>
@@ -15,7 +15,7 @@ describe("LayoutPage Component", () => {
     expect(container).toMatchSnapshot();
   });
 
-  test("Render children", () => {
+  test('Render children', () => {
     const { getByText } = render(
       <LayoutPage>
         <div>Test Children</div>
