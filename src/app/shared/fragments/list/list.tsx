@@ -9,20 +9,24 @@ interface ListProps {
     task: string;
     createdAt: string;
     completed: boolean;
-  }[]; 
+  }[];
 }
 export default function List(props: ListProps) {
-    const { datas } = props;
+  const { datas } = props;
 
   return (
     <div className="flex flex-col gap-y-4">
-      {datas.length > 0 ? datas.map((data) => {
-        return (
-          <div key={data.id}>
-            <Card data={data}></Card>
-          </div>
-        );
-      }): <Typography type="H3">Sorry, No Data Available</Typography>}
+      {datas.length > 0 ? (
+        datas.map((data) => {
+          return (
+            <div key={data.id}>
+              <Card data={data}></Card>
+            </div>
+          );
+        })
+      ) : (
+        <Typography type="H3">Sorry, No Data Available</Typography>
+      )}
     </div>
   );
 }
