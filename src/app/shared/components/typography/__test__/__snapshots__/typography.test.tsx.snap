@@ -13,7 +13,7 @@ exports[`Typography Component Component header h1 1`] = `
 exports[`Typography Component Component header h2 1`] = `
 <div>
   <h2
-    class=" font-bold  xl:text-3xl lg:text-2xl md:text-xl"
+    class=" font-bold  xl:text-3xl text-2xl"
   >
     Heading 2
   </h2>
@@ -33,7 +33,7 @@ exports[`Typography Component Component header h3 1`] = `
 exports[`Typography Component Component header h4 1`] = `
 <div>
   <h4
-    class=" font-bold  xl:text-xl lg:text-lg"
+    class=" font-bold  xl:text-xl lg:text-lg text-base"
   >
     Heading 4
   </h4>
