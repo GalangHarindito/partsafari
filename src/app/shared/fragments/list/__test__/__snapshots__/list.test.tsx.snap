@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fragment List Render Task if the category is all 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 1
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 2
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Fragment List Render Task if the category is work 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 1
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="mock-card"
+      >
+        Task 3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Fragment List renders "Sorry, No Data Available" when datas is an empty array 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <h3
+      class=" font-bold  xl:text-2xl lg:text-xl md:text-lg"
+    >
+      Sorry, No Data Available
+    </h3>
+  </div>
+</div>
+`;

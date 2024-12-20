@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chips Component renders with the correct title 1`] = `
+<div>
+  <div
+    class="p-4 py-2 rounded-full cursor-pointer bg-tab-active"
+  >
+    <p
+      class="font-bold sm:text-sm text-xs"
+    >
+      TEST TITLE
+    </p>
+  </div>
+</div>
+`;

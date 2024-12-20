@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutPage Component Render the header with correct title 1`] = `
+<div>
+  <section
+    class="bg-background h-screen w-full"
+  >
+    <header
+      class="bg-header-blue py-2.5 px-5 rounded-t-round-30px"
+    >
+      <h2
+        class="text-white font-bold  xl:text-3xl text-2xl"
+      >
+        To Do
+      </h2>
+    </header>
+    <main
+      class="bg-background-main h-screen w-full rounded-b-round-30px pt-12.5 flex justify-center px-4 md:px-0"
+    >
+      <div>
+        Test Children
+      </div>
+    </main>
+  </section>
+</div>
+`;
