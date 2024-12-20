@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Component renders filter options correctly 1`] = `
+<div>
+  <div
+    class="flex flex-row gap-3 items-center"
+  >
+    <p
+      class="font-bold sm:text-sm text-xs"
+    >
+      Filter:
+    </p>
+    <div>
+      <div
+        class="p-4 py-2 rounded-full cursor-pointer bg-tab-active"
+      >
+        <p
+          class="font-bold sm:text-sm text-xs"
+        >
+          ALL
+        </p>
+      </div>
+    </div>
+    <div>
+      <div
+        class="p-4 py-2 rounded-full cursor-pointer bg-tab-inactive"
+      >
+        <p
+          class="font-bold sm:text-sm text-xs"
+        >
+          CATEGORY 2
+        </p>
+      </div>
+    </div>
+    <div>
+      <div
+        class="p-4 py-2 rounded-full cursor-pointer bg-tab-inactive"
+      >
+        <p
+          class="font-bold sm:text-sm text-xs"
+        >
+          CATEGORY 1
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
