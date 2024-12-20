@@ -8,10 +8,10 @@ exports[`Card Component Card layout unchanged 1`] = `
     <div
       class="justify-self-center self-center"
     >
-      <label
+      <div
         class="flex items-center gap-2 cursor-pointer"
       >
-        <div
+        <label
           class="flex items-center justify-center w-4 h-4 relative"
         >
           <input
@@ -33,17 +33,14 @@ exports[`Card Component Card layout unchanged 1`] = `
               points="20 6 9 17 4 12"
             />
           </svg>
-        </div>
-        <span
-          class="text-sm hidden"
-        />
-      </label>
+        </label>
+      </div>
     </div>
     <div
       class="justify-self-start"
     >
       <h4
-        class=" font-bold  xl:text-xl lg:text-lg"
+        class=" font-bold  xl:text-xl lg:text-lg text-base"
       >
         Test Task
       </h4>
@@ -54,10 +51,10 @@ exports[`Card Component Card layout unchanged 1`] = `
       </p>
     </div>
     <div
-      class="justify-self-center"
+      class="justify-self-end"
     >
       <p
-        class="text-sm font-normal"
+        class="text-sm font-normal pt-1 pr-2"
       >
         2023/10/01 12:00
       </p>

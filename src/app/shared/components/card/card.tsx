@@ -1,6 +1,6 @@
-import Checkbox from "@/shared/components/checkbox/checkbox";
-import Typography from "@/shared/components/typography/typography";
-import { formatDate } from "@/utils/helper";
+import Checkbox from '@/shared/components/checkbox/checkbox';
+import Typography from '@/shared/components/typography/typography';
+import { formatDate } from '@/utils/helper';
 
 interface CardPropertyProps {
   data: {
@@ -21,15 +21,19 @@ export default function Card({ data }: CardPropertyProps) {
         <Checkbox check={completed} />
       </div>
       <div className="justify-self-start">
-        <Typography type="H4">{task}</Typography>
-        <Typography type="p" className={["text-sm", "font-normal"]}>
-          {category}
-        </Typography>
+        <Typography type="H4" title={task} />
+        <Typography
+          type="p"
+          className={['text-sm', 'font-normal']}
+          title={category}
+        />
       </div>
-      <div className="justify-self-center">
-        <Typography type="p" className={["text-sm", "font-normal"]}>
-          {formatDate(createdAt)}
-        </Typography>
+      <div className="justify-self-end">
+        <Typography
+          type="p"
+          className={['text-sm', 'font-normal', 'pt-1', 'pr-2']}
+          title={formatDate(createdAt)}
+        />
       </div>
     </div>
   );
